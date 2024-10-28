@@ -1,0 +1,151 @@
+@media (min-width: 768px) {
+  .menu__top h2 {
+    font-size: 45px;
+    padding: 30px;
+  }
+  .menu__close-btn {
+    width: 70px;
+  }
+  .nav__list {
+    margin-top: 150px;
+    gap: 100px;
+  }
+  .nav__link {
+    font-size: 45px;
+
+    &::after {
+      height: 2px;
+    }
+  }
+
+  .header-mobile {
+    padding-inline: 30px;
+  }
+
+  .header-mobile__logo {
+    font-size: 30px;
+  }
+
+  .header__title {
+    padding-inline: 30px;
+  }
+
+  .header__description {
+    padding-inline: 30px;
+  }
+
+  .header-mobile__protect-btn {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .stats__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+  }
+
+  .about-us__text {
+    padding-inline: 30px;
+  }
+
+  .about-us__lower-text {
+    padding-inline: 30px;
+  }
+
+  .services__text {
+    padding-inline: 30px;
+  }
+
+  .contact-us__library {
+
+    &-text {
+      grid-column: span 3;
+    }
+
+    &-books {
+      margin-top: 0px;
+    }
+    &-webinars {
+      margin-top: 0px;
+    }
+    &-articles {
+      padding-bottom: 0px;
+      margin-top: 50px;
+    }
+  }
+
+  .library__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact-us__library-text h2 {
+    padding-inline: 30px;
+  }
+
+  .contact-us__library-text p {
+    padding-inline: 30px;
+  }
+
+  .radial-gradient::before {
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgb(0, 21, 49) 30%
+    );
+    z-index: -1;
+  }
+
+  .contact-us__library-info {
+    display: contents;
+  }
+
+  .footer {
+    
+    &__container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      
+    }
+
+    &__title {
+      grid-column: span 2;
+      text-align: center;
+    }
+
+    &__legal {
+      margin-top: 0px;
+    }
+
+    &__copyright {
+      grid-column: span 2;
+      text-align: center;
+    }
+
+    &__links-wrapper {
+      display: contents;
+    }
+  }
+}
+
+@media (min-width: 1067px) {
+  .header-services {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+
+    &__item:nth-child(2),
+    &__item:nth-child(3) {
+      margin-top: 0px;
+    }
+  }
+}
